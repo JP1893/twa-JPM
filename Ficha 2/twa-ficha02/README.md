@@ -24,3 +24,8 @@ node check.js
 ```
 
 `node check.js` não apresenta mensagens quando os testes passam.
+
+## Utilização de IA
+
+Foi utilizada IA generativa como apoio na revisão
+do código, correção de erros e elaboração dos testes.
