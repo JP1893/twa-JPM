@@ -1,47 +1,34 @@
-# Tecnologias Web Avançadas
+# Ficha 03 — Catálogo no browser
 
-Exercícios das primeiras aulas da unidade curricular (2026/27).
+Página do catálogo da Ficha 02, agora com Vite e JavaScript no browser.
 
-## Estrutura
+## Como correr
 
-- `twa-ficha01/` — módulo ES e consulta de uma API pública com `fetch`.
-- `twa-vite/` — projeto Vite com contador decrescente.
-- `twa-ficha02/` — catálogo de produtos, funções puras e testes.
-
-## Como executar
-
-É necessário ter Node.js 22 e npm instalados.
-
-**Ficha 01 — módulo e API:**
+Requer Node.js 22 e npm. Na pasta `twa-ficha03`:
 
 ```bash
-cd twa-ficha01
-node app.js
-node api.js
-```
-
-**Vite:**
-
-```bash
-cd twa-vite
 npm install
 npm run dev
 ```
 
-**Ficha 02:**
+Abrir o endereço indicado pelo Vite (normalmente `http://localhost:5173`).
+
+Para executar os testes das funções puras:
 
 ```bash
-cd twa-ficha02
-node app.js
-node app.js tech
-node app.js search gaming
-node app.js top 3
-node app.js report
 node check.js
 ```
 
-O ficheiro `report.json` é gerado pelo comando `node app.js report`.
+## O que está feito
+
+- Produtos carregados de `public/items.json` com `fetch`, `async/await` e tratamento de erros.
+- Estados `loading`, `error` e `ready`, com botão **Tentar de novo** em caso de erro.
+- Pesquisa pelo nome ou tags, filtro por categoria e ordenação por preço.
+- Clique num produto para ver o detalhe (incluindo tags, marca e garantia).
+- DOM criado com `createElement` e `textContent`, sem `innerHTML`.
+- Nova função pura `sortByPrice()` e testes em `check.js`.
+- Delegação de eventos no `#list`.
 
 ## Utilização de IA
 
-Foi utilizado o ChatGPT como apoio, fora da aula, na preparação e revisão dos exercícios e dos testes.
+Foi utilizado o ChatGPT, fora da aula, como apoio na preparação do código e dos testes. O código deve ser revisto e compreendido antes da entrega.
