@@ -1,69 +1,47 @@
-# Tecnologias Web Avançadas - Ficha 01
+# Tecnologias Web Avançadas
 
-Exercícios da primeira aula: módulos ES, utilização de uma API com `fetch` e um projeto Vite.
+Exercícios das primeiras aulas da unidade curricular (2026/27).
 
-## 1. Ferramentas
+## Estrutura
 
-Verificar as versões instaladas no terminal:
+- `twa-ficha01/` — módulo ES e consulta de uma API pública com `fetch`.
+- `twa-vite/` — projeto Vite com contador decrescente.
+- `twa-ficha02/` — catálogo de produtos, funções puras e testes.
 
-```bash
-node --version
-npm --version
-git --version
-```
+## Como executar
 
-O exercício foi preparado para Node.js 22, npm e Git.
+É necessário ter Node.js 22 e npm instalados.
 
-## 2. Primeiro módulo ES
-
-Na pasta `twa-ficha01`, o `package.json` tem `"type": "module"`.
-O ficheiro `utils.js` exporta a função `slug`, usada em `app.js`.
+**Ficha 01 — módulo e API:**
 
 ```bash
 cd twa-ficha01
 node app.js
-```
-
-Resultado esperado: `tecnologias-web-avançadas`
-
-## 3. API pública
-
-Ainda em `twa-ficha01`:
-
-```bash
 node api.js
 ```
 
-O programa consulta o repositório do Node.js na API do GitHub, mostra o nome e o número de estrelas e guarda alguns campos em `repo.json`. É preciso ter ligação à Internet para executar este passo.
-
-## 4. Projeto Vite
-
-Na pasta `twa-vite`:
+**Vite:**
 
 ```bash
+cd twa-vite
 npm install
 npm run dev
 ```
 
-Abrir o endereço indicado no terminal. O contador começa em 10, diminui um número por clique e atualiza o título do separador. Quando chega a 0, deixa de diminuir.
-
-Para testar a compilação:
+**Ficha 02:**
 
 ```bash
-npm run build
+cd twa-ficha02
+node app.js
+node app.js tech
+node app.js search gaming
+node app.js top 3
+node app.js report
+node check.js
 ```
 
-## 5. Publicar no GitHub ou GitLab
+O ficheiro `report.json` é gerado pelo comando `node app.js report`.
 
-Criar um repositório chamado `twa-<nome>` e, na pasta principal deste trabalho, executar:
+## Utilização de IA
 
-```bash
-git init
-git add .
-git commit -m "Ficha 01"
-git branch -M main
-git remote add origin URL_DO_REPOSITORIO
-git push -u origin main
-```
-
-Substituir `URL_DO_REPOSITORIO` pelo endereço fornecido pelo GitHub/GitLab. Entregar esse URL no Moodle. Se o repositório for privado, dar acesso ao utilizador `davidmgvaz` (no GitLab, com papel Reporter).
+Foi utilizado o ChatGPT como apoio, fora da aula, na preparação e revisão dos exercícios e dos testes.
