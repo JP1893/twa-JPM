@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo de produtos</title>
+  </head>
+  <body>
+    <main>
+      <h1>Catálogo de produtos</h1>
+      <p>Ficha 03 — Tecnologias Web Avançadas</p>
+
+      <div class="controls">
+        <label for="q">Pesquisar</label>
+        <input id="q" type="search" placeholder="Nome ou tag" />
+
+        <label for="category">Categoria</label>
+        <select id="category">
+          <option value="">Todas</option>
+        </select>
+
+        <button id="sort" type="button">Ordenar: preço mais alto</button>
+      </div>
+
+      <p id="message" role="status" aria-live="polite"></p>
+      <ul id="list"></ul>
+      <section id="detail" aria-label="Detalhes do produto"></section>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
