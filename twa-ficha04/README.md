@@ -35,3 +35,6 @@ Porque se escreve items.value no script e items no template? No script, o valor 
 Porque é visible um computed e não um ref atualizado em cada handler? Porque depende dos produtos, da pesquisa, da categoria e da ordenação. O computed acompanha essas dependências; com um ref, esquecer uma atualização num handler podia deixar a lista desatualizada.
 
 O que evita ? E se usarmos o índice numa lista que reordena? Uma chave estável identifica cada item durante as atualizações. Com o índice, a chave identifica a posição, podendo fazer com que o estado de um elemento seja associado ao produto errado após reordenar.
+
+Utilização de IA
+Foi utilizado o ChatGPT, fora da aula, como apoio na preparação do código e dos testes. O código deve ser revisto e compreendido antes da entrega.
